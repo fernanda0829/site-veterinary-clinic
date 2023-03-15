@@ -24,7 +24,6 @@
 #header .menu {
   flex: 1;
   font-size: 22px;
-  color: #fff;
   font-weight: 500;
   text-align: center;
 }
@@ -32,6 +31,10 @@
 #header .menu li {
   margin-right: 40px;
   display: inline;
+}
+
+#header .menu li a {
+  color: #fff;
 }
 
 #header .input {
@@ -66,16 +69,17 @@
   transition: 2s;
 }
 
-#header .active-menu {
+#header .menu li .active-menu {
   color: #00bdc9;
 }
 
 #header .active-menu i {
   margin-right: 10px;
   font-size: 15px;
+  color: #00bdc9;
 }
 
-#header .menu li :hover {
+#header .menu .hover-menu:hover {
   color: #028993;
   transition: 2s;
 }
@@ -256,9 +260,4 @@
 #service .service-text p {
   font-size: 33px;
   margin-bottom: 100px;
-}
-
-#service .service-box {
-  display: flex;
-  flex-direction: column;
 }
