@@ -232,21 +232,22 @@
   font-size: 32px;
 }
 
+#service {
+  display: flex;
+  justify-content: center;
+  height: 1020px;
+  background-color: #fbc301;
+}
+
 #service .container-service {
   width: 1160px;
   padding: 100px 0;
   box-sizing: border-box;
 }
 
-#service {
-  display: flex;
-  justify-content: center;
-  height: 1020px;
-
-  background-color: #fbc301;
-}
-
 #service .service-text {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: #fff;
 }
@@ -260,4 +261,44 @@
 #service .service-text p {
   font-size: 33px;
   margin-bottom: 100px;
+}
+
+#service .service-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#service .service-box ul {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+#service .service-box .box-item {
+  width: 342px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+#service .service-box .box-item .item-img {
+  margin-bottom: 50px;
+}
+
+#service .service-box .item-text {
+  max-width: 342px;
+  text-align: center;
+  color: #fff;
+}
+
+#service .service-box .item-text h3 {
+  margin-bottom: 25px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+#service .service-box .item-text p {
+  margin-bottom: 25px;
+  font-size: 25px;
+  line-height: 35px;
 }
