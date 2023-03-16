@@ -10,10 +10,16 @@
 }
 
 .container {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1160px;
 }
 
 #header .logo img {
@@ -91,7 +97,7 @@
   background-color: #fbc301;
 }
 
-#banner .banner-content h1 {
+#banner .banner-content .banner-content-tittle {
   color: #fff;
   font-size: 67px;
   line-height: 80px;
@@ -99,7 +105,7 @@
   margin-bottom: 50px;
   letter-spacing: 1px;
 }
-#banner .banner-content p {
+#banner .banner-content .banner-content-desc {
   color: #fff;
   font-size: 29px;
   line-height: 43.5px;
@@ -144,15 +150,12 @@
 }
 
 .content {
-  display: flex;
-  justify-content: center;
-  height: 780px;
   padding: 140px 0;
   box-sizing: border-box;
   background-color: #fff;
 }
 
-.content .content-description h2 {
+.content .content-head .content-head-tittle {
   font-size: 50px;
   font-weight: 600;
   color: #313243;
@@ -160,7 +163,7 @@
   margin-bottom: 50px;
 }
 
-.content .content-description p {
+.content .content-head .content-head-desc {
   color: #313243;
   font-size: 29px;
   line-height: 43.5px;
@@ -168,7 +171,7 @@
   letter-spacing: 1px;
 }
 
-.content .content-description .btn-2 {
+.content .content-head .btn-2 {
   background-color: #fbc301;
   width: 182px;
   height: 70px;
@@ -179,7 +182,7 @@
   color: #fff;
 }
 
-.content .content-description .btn-2:hover {
+.content .content-head .btn-2:hover {
   background-color: #daac00;
 }
 
@@ -232,73 +235,105 @@
   font-size: 32px;
 }
 
-#service {
-  display: flex;
-  justify-content: center;
-  height: 1020px;
+#service,
+#products {
+  padding: 100px 0;
   background-color: #fbc301;
 }
 
-#service .container-service {
-  width: 1160px;
-  padding: 100px 0;
-  box-sizing: border-box;
-}
-
-#service .service-text {
-  display: flex;
-  flex-direction: column;
+#service .service-head,
+#products .products-head {
   text-align: center;
   color: #fff;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-#service .service-text h2 {
+#service .service-head .service-head-tittle,
+#products .products-head .products-head-tittle {
   font-size: 75px;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
-#service .service-text p {
+#service .service-head .service-head-desc,
+#products .products-head .products-head-desc {
   font-size: 33px;
   margin-bottom: 100px;
 }
 
-#service .service-box {
+#service .service-list,
+#products .products-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-#service .service-box ul {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-}
-
-#service .service-box .box-item {
-  width: 342px;
-  display: flex;
-  flex: 1;
-  align-items: center;
-}
-
-#service .service-box .box-item .item-img {
+#service .service-list .service-item-list .item-list-img,
+#products .products-list .products-item-list .item-list-img {
   margin-bottom: 50px;
 }
 
-#service .service-box .item-text {
+#service .service-list .service-item-list .item-list-head {
   max-width: 342px;
   text-align: center;
   color: #fff;
 }
 
-#service .service-box .item-text h3 {
+#service .service-list .item-list-head .list-head-tittle {
   margin-bottom: 25px;
   font-size: 38px;
   font-weight: 600;
 }
 
-#service .service-box .item-text p {
+#service .service-list .item-list-head .list-head-desc {
   margin-bottom: 25px;
   font-size: 25px;
   line-height: 35px;
+}
+
+/* .content reverse*/
+.text-right {
+  text-align: right;
+  margin-left: 90px;
+}
+
+.video-left {
+  margin-left: 0;
+}
+
+.video-left .bg-2 {
+  width: 252px;
+  height: 206px;
+  background-color: #fdd345;
+  position: absolute;
+  z-index: 0;
+  bottom: -30px;
+  right: -30px;
+}
+
+#products .products-list .products-item-list {
+}
+
+#products .products-list .products-item-list .item-list-head {
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  max-width: 210px;
+}
+
+#products .products-list .products-item-list .item-list-head .list-head-price {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#products .products-list .products-item-list .btn-rounded {
+  background-color: #00bdc9;
+  width: 200px;
+  height: 60px;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 30px;
 }
