@@ -35,3 +35,7 @@ input,
 button {
   border: none;
 }
+
+img {
+  display: inline;
+}
