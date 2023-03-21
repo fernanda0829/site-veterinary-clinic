@@ -698,6 +698,8 @@
   .content .content-video .bg {
     width: 227px;
     height: 185px;
+    left: -27px;
+    bottom: -27px;
   }
 
   .content .video-thumb .mask-thumb {
@@ -898,6 +900,103 @@
 @media (max-width: 991px) {
   .container {
     max-width: 720px;
+  }
+
+  #header .logo img {
+    max-width: 144px;
+  }
+
+  #header .input-search {
+    width: 144px;
+  }
+
+  #header .btn-search {
+    font-size: 18px;
+  }
+
+  #banner {
+    height: 624px;
+  }
+
+  #banner .banner-content .banner-content-tittle {
+    font-size: 45px;
+    line-height: 58px;
+  }
+
+  #banner .banner-content .banner-content-desc {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  #banner .banner-photo img {
+    max-width: 304px;
+  }
+
+  #banner .banner-content .btn-1,
+  .btn-2 {
+    width: 132px;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .content,
+  #post {
+    padding: 112px 0;
+  }
+
+  .content .flex-between {
+    flex-direction: column;
+  }
+
+  .content-head {
+    text-align: center;
+    max-width: 536px;
+  }
+
+  .content .content-head .content-head-tittle {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 36px;
+  }
+
+  .content .content-head .content-head-desc {
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 36px;
+  }
+
+  .content .content-head .btn-2 {
+    width: 132px;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .content .content-video .bg {
+    width: 182px;
+    height: 148px;
+    left: -24px;
+    bottom: -24px;
+  }
+
+  .content .video-thumb .mask-thumb {
+    width: 365px;
+    height: 346px;
+  }
+
+  .content .video-thumb img {
+    max-width: 365px;
+  }
+
+  .content .content-video .circle-bg {
+    width: 72px;
+    height: 72px;
+    border-radius: 38px;
+  }
+
+  .content .circle-bg .video-icon-play {
+    font-size: 29px;
   }
 }
 
