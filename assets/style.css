@@ -1030,6 +1030,8 @@
   }
 
   #service .service-list,
+  #products .products-list,
+  #team .team-list,
   #info .info-content-item {
     justify-content: center;
     flex-direction: column;
@@ -1088,33 +1090,8 @@
     bottom: -24px;
   }
 
-  #products .products-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  #products .products-list .products-item-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0 0 40px 0;
-  }
-
-  #products .products-list .products-item-list .item-list-flex,
-  #team .team-list .item-list-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   #products .products-list .products-item-list .item-list-img img {
     max-width: 278px;
-  }
-
-  #products .products-list .products-item-list .item-list-head {
-    max-width: 260px;
   }
 
   #products
@@ -1124,7 +1101,6 @@
     .list-head-price {
     font-size: 34px;
     margin-bottom: 22px;
-    padding: 0 20px;
   }
 
   #products .products-list .products-item-list .btn-rounded {
@@ -1136,12 +1112,6 @@
 
   #team {
     padding: 90px 0;
-  }
-
-  #team .team-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
 
   #team .team-list .team-item-list .item-list-img img {
